@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium men's denim and contemporary pants.">
+  <title>FORM — Built For The Everyday</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT -->
+  <div class="announcement">
+    FREE SHIPPING ON ORDERS OVER ₹2,999
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <a href="#" class="logo">FORM<span>.</span></a>
+
+    <nav class="desktop-nav">
+      <a href="#shop">SHOP</a>
+      <a href="#denim">DENIM</a>
+      <a href="#baggy">BAGGY</a>
+      <a href="#collection">COLLECTION</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">
+        <svg viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m20 20-4-4"></path>
+        </svg>
+      </button>
+
+      <button class="icon-btn account-btn" aria-label="Account">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="4"></circle>
+          <path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path>
+        </svg>
+      </button>
+
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">
+        <svg viewBox="0 0 24 24">
+          <path d="M5 8h14l-1 12H6L5 8Z"></path>
+          <path d="M9 8a3 3 0 0 1 6 0"></path>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+
+      <button class="menu-btn" id="menuBtn">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#shop">SHOP</a>
+    <a href="#denim">DENIM</a>
+    <a href="#baggy">BAGGY</a>
+    <a href="#collection">COLLECTION</a>
+    <a href="#footer">CONTACT</a>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="search-overlay" id="searchOverlay">
+    <button class="close-search" id="closeSearch">×</button>
+    <div class="search-inner">
+      <span>SEARCH</span>
+      <input id="searchInput" type="text" placeholder="Search products..." autocomplete="off">
+      <div id="searchResults"></div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-image">
+        <img src="https://ibb.co/rjpHdzg" alt="FORM denim collection">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow">NEW SEASON / 2026</p>
+        <h1>BUILT FOR<br>THE EVERYDAY.</h1>
+
+        <p class="hero-copy">
+          Denim and silhouettes designed to move differently.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#shop" class="btn btn-white">SHOP DENIM</a>
+          <a href="#collection" class="btn btn-outline-white">EXPLORE COLLECTION</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll">SCROLL TO EXPLORE ↓</div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>DENIM WITH INTENT</span>
+        <span>BUILT DIFFERENT</span>
+        <span>MODERN SILHOUETTES</span>
+        <span>DENIM WITH INTENT</span>
+        <span>BUILT DIFFERENT</span>
+        <span>MODERN SILHOUETTES</span>
+      </div>
+    </div>
+
+    <!-- FEATURED -->
+    <section class="section featured" id="collection">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow dark">01 / FEATURED</p>
+          <h2>THE NEW<br>STANDARD.</h2>
+        </div>
+        <a href="#shop" class="text-link">VIEW ALL →</a>
+      </div>
+
+      <div class="product-grid featured-grid" id="featuredProducts"></div>
+    </section>
+
+    <!-- CATEGORY -->
+    <section class="categories" id="denim">
+
+      <a href="#shop" class="category category-large">
+        <img src="https://ibb.co/Qv0rPpNQ" alt="Denim">
+        <div class="category-overlay"></div>
+        <div class="category-content">
+          <p>01 / ESSENTIALS</p>
+          <h3>DENIM</h3>
+          <span>EXPLORE →</span>
+        </div>
+      </a>
+
+      <a href="#shop" class="category" id="baggy">
+        <img src="https://ibb.co/vvKc9HSk" alt="Baggy pants">
+        <div class="category-overlay"></div>
+        <div class="category-content">
+          <p>02 / RELAXED</p>
+          <h3>BAGGY</h3>
+          <span>EXPLORE →</span>
+        </div>
+      </a>
+
+      <a href="#shop" class="category">
+        <img src="https://ibb.co/kVbxynkX" alt="Wide leg pants">
+        <div class="category-overlay"></div>
+        <div class="category-content">
+          <p>03 / VOLUME</p>
+          <h3>WIDE LEG</h3>
+          <span>EXPLORE →</span>
+        </div>
+      </a>
+
+      <a href="#shop" class="category">
+        <img src="https://ibb.co/R49TKpNr" alt="New arrivals">
+        <div class="category-overlay"></div>
+        <div class="category-content">
+          <p>04 / LATEST</p>
+          <h3>NEW ARRIVALS</h3>
+          <span>EXPLORE →</span>
+        </div>
+      </a>
+
+    </section>
+
+    <!-- EDITORIAL -->
+    <section class="editorial">
+      <div class="editorial-number">02</div>
+
+      <div class="editorial-content reveal">
+        <p class="eyebrow">THE FORM PHILOSOPHY</p>
+        <h2>FIT IS A<br>STATEMENT.</h2>
+
+        <p>
+          Designed around proportion, movement and everyday confidence.
+          Modern silhouettes built to become part of your uniform.
+        </p>
+
+        <a href="#shop" class="btn btn-white">DISCOVER THE FIT</a>
+      </div>
+
+      <div class="editorial-image">
+        <img src="https://ibb.co/DHdCMGtG" alt="Fashion editorial">
+      </div>
+    </section>
+
+    <!-- SHOP -->
+    <section class="shop section" id="shop">
+
+      <div class="section-head shop-heading reveal">
+        <div>
+          <p class="eyebrow dark">03 / SHOP</p>
+          <h2>SHOP ALL.</h2>
+        </div>
+
+        <p class="shop-description">
+          Everyday pieces. Considered silhouettes.<br>
+          Nothing unnecessary.
+        </p>
+      </div>
+
+      <!-- FILTER BAR -->
+      <div class="filter-bar">
+
+        <div class="filter-left">
+          <button class="filter-btn active" data-filter="all">ALL</button>
+          <button class="filter-btn" data-filter="denim">DENIM</button>
+          <button class="filter-btn" data-filter="baggy">BAGGY</button>
+          <button class="filter-btn" data-filter="wide">WIDE LEG</button>
+          <button class="filter-btn" data-filter="trouser">TROUSERS</button>
+        </div>
+
+        <div class="filter-right">
+          <select id="sortSelect">
+            <option value="newest">NEWEST</option>
+            <option value="low">PRICE: LOW TO HIGH</option>
+            <option value="high">PRICE: HIGH TO LOW</option>
+          </select>
+
+          <button class="view-btn active" id="gridView">▦</button>
+          <button class="view-btn" id="listView">☰</button>
+        </div>
+
+      </div>
+
+      <div class="product-grid shop-grid" id="shopProducts"></div>
+
+    </section>
+
+    <!-- BANNER -->
+    <section class="statement">
+      <div class="statement-inner">
+        <p>FORM / 001</p>
+        <h2>WEAR THE<br>DIFFERENCE.</h2>
+        <a href="#shop" class="btn btn-black">SHOP THE COLLECTION</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CART DRAWER -->
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow dark">YOUR BAG</p>
+        <h3>SHOPPING BAG</h3>
+      </div>
+      <button id="closeCart" class="close-btn">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-empty" id="cartEmpty">
+      <p>Your bag is empty.</p>
+      <a href="#shop" id="continueShopping">CONTINUE SHOPPING →</a>
+    </div>
+
+    <div class="cart-bottom" id="cartBottom">
+      <div class="cart-total">
+        <span>SUBTOTAL</span>
+        <strong id="cartSubtotal">₹0</strong>
+      </div>
+
+      <p class="shipping-note">
+        Shipping calculated at checkout.
+      </p>
+
+      <button class="checkout-btn" id="checkoutBtn">
+        CHECKOUT →
+      </button>
+    </div>
+
+  </aside>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- PRODUCT MODAL -->
+  <div class="product-modal" id="productModal">
+
+    <button class="modal-close" id="closeProduct">×</button>
+
+    <div class="product-modal-inner">
+
+      <div class="modal-image">
+        <img id="modalImage" src="" alt="">
+      </div>
+
+      <div class="modal-info">
+
+        <p class="eyebrow dark" id="modalCategory"></p>
+        <h2 id="modalName"></h2>
+        <div class="modal-price" id="modalPrice"></div>
+
+        <p class="modal-description" id="modalDescription"></p>
+
+        <div class="size-section">
+          <div class="size-heading">
+            <span>SELECT SIZE</span>
+            <button id="sizeGuideBtn">SIZE GUIDE</button>
+          </div>
+
+          <div class="sizes">
+            <button class="size">28</button>
+            <button class="size">30</button>
+            <button class="size">32</button>
+            <button class="size">34</button>
+            <button class="size">36</button>
+            <button class="size">38</button>
+          </div>
+        </div>
+
+        <div class="quantity">
+          <span>QUANTITY</span>
+          <div class="quantity-control">
+            <button id="minusQty">−</button>
+            <span id="modalQty">1</span>
+            <button id="plusQty">+</button>
+          </div>
+        </div>
+
+        <button class="add-main" id="modalAdd">
+          ADD TO BAG — <span id="modalAddPrice"></span>
+        </button>
+
+        <button class="buy-main" id="modalBuy">
+          BUY NOW
+        </button>
+
+        <div class="product-details">
+          <details open>
+            <summary>PRODUCT DETAILS</summary>
+            <p>Premium construction with a relaxed contemporary fit. Designed for everyday wear.</p>
+          </details>
+
+          <details>
+            <summary>SHIPPING</summary>
+            <p>Orders are processed within 1–2 business days.</p>
+          </details>
+
+          <details>
+            <summary>RETURNS</summary>
+            <p>Easy returns accepted according to our return policy.</p>
+          </details>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKOUT -->
+  <section class="checkout-page" id="checkoutPage">
+
+    <div class="checkout-top">
+      <a href="#" class="logo">FORM<span>.</span></a>
+      <button id="closeCheckout">×</button>
+    </div>
+
+    <div class="checkout-container">
+
+      <div class="checkout-form">
+
+        <p class="eyebrow dark">CHECKOUT</p>
+        <h1>COMPLETE<br>YOUR ORDER.</h1>
+
+        <form id="checkoutForm">
+
+          <div class="form-row">
+            <label>
+              FULL NAME
+              <input type="text" required placeholder="Your name">
+            </label>
+
+            <label>
+              PHONE
+              <input type="tel" required placeholder="+91">
+            </label>
+          </div>
+
+          <label>
+            EMAIL
+            <input type="email" required placeholder="you@email.com">
+          </label>
+
+          <label>
+            ADDRESS
+            <input type="text" required placeholder="House / Street / Area">
+          </label>
+
+          <div class="form-row">
+            <label>
+              CITY
+              <input type="text" required placeholder="City">
+            </label>
+
+            <label>
+              STATE
+              <input type="text" required placeholder="State">
+            </label>
+          </div>
+
+          <label>
+            PINCODE
+            <input type="text" required placeholder="000000">
+          </label>
+
+          <button type="submit" class="place-order">
+            PLACE ORDER →
+          </button>
+
+        </form>
+
+      </div>
+
+      <div class="checkout-summary">
+        <p class="eyebrow dark">ORDER SUMMARY</p>
+        <div id="checkoutItems"></div>
+
+        <div class="summary-total">
+          <span>TOTAL</span>
+          <strong id="checkoutTotal">₹0</strong>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <div class="footer-logo">FORM<span>.</span></div>
+        <p>Modern clothing.<br>Considered differently.</p>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h4>SHOP</h4>
+          <a href="#shop">All Products</a>
+          <a href="#denim">Denim</a>
+          <a href="#baggy">Baggy</a>
+          <a href="#shop">New Arrivals</a>
+        </div>
+
+        <div>
+          <h4>HELP</h4>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Size Guide</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div>
+          <h4>FOLLOW</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 FORM. ALL RIGHTS RESERVED.</span>
+      <span>MADE FOR EVERYDAY.</span>
+    </div>
+
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
